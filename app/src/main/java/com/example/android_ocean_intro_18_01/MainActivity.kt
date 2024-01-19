@@ -30,7 +30,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnAbrirTela.setOnClickListener {
+
+            val nomeDigitado = editTxt.text.toString()
+
             val abrirNovaTela = Intent(this, Result::class.java)
+            abrirNovaTela.putExtra("RESULTADO", nomeDigitado)
             startActivity(abrirNovaTela)
 
         }
