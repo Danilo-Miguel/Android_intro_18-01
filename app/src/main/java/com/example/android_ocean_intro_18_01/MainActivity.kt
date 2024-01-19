@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         val txtOne =  findViewById<TextView>(R.id.txt_one)
 
         btnEnviar.setOnClickListener {
-            txtOne.text = "Danilo de Soza Miguel"
+            txtOne.text = "Danilo de Souza Miguel"
         }
 
 
