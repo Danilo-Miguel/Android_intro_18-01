@@ -18,7 +18,14 @@ class MainActivity : AppCompatActivity() {
         val editTxt = findViewById<EditText>(R.id.edit_txt)
 
         btnEnviar.setOnClickListener {
-            txtOne.text = editTxt.text
+            val input = editTxt.text
+
+            if(input.isBlank()){
+                editTxt.error = "Esse campo não pode estar vazio"
+            }else {
+                txtOne.text = editTxt.text
+            }
+
         }
 
 
