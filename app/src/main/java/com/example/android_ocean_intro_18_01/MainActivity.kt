@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         val btnEnviar = findViewById<Button>(R.id.btn_enviar)
         val txtOne =  findViewById<TextView>(R.id.txt_one)
 
+        btnEnviar.setOnClickListener {
+            txtOne.text = "Danilo de Soza Miguel"
+        }
+
 
 
     }
